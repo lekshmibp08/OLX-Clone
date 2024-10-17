@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import './Footer.css';
+import { AuthContex } from '../../store/Context';
 
-function Footer() {
+
+function Footer() {  
+  
   return (
     <div className="footerParentDiv">
       <div className="content">

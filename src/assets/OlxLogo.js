@@ -1,14 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 export default  function OlxLogo() {
+  const navigate = useNavigate()
     return(  
           <svg
-        width="48px"
-        height="48px"
-        viewBox="0 0 1024 1024"
-        data-aut-id="icon"
-        className
-        fillRule="evenodd"
+          onClick={()=>navigate('/')}
+          width="48px"
+          height="48px"
+          viewBox="0 0 1024 1024"
+          data-aut-id="icon"
+          className
+          fillRule="evenodd"
+          style={{cursor:'pointer'}}
       >
         <path
           className="rui-77aaa"
